@@ -18,8 +18,6 @@ export default {
       },
     },
   },
-  corePlugins: {
-    container: false,
-  },
-  darkMode: ["class"],
+  // Tailwind v4 typing expects a string strategy. Use "class" for opt-in dark mode.
+  darkMode: "class",
 } satisfies Config;

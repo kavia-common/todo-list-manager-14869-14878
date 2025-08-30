@@ -1,5 +1,9 @@
 import type { MetadataRoute } from "next";
 
+// Ensure static export compatibility for sitemap.xml
+export const dynamic = "force-static";
+export const revalidate = false;
+
 // PUBLIC_INTERFACE
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
